@@ -1,0 +1,89 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+  
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: radial-gradient(circle at top,#1a1a1a,#000);
+  color:white;
+}
+
+/* CONTAINER */
+.container{
+  text-align:center;
+  animation: fadeIn 1s ease;
+}
+
+h1{
+  font-size:32px;
+  margin-bottom:10px;
+  background: linear-gradient(90deg,#ff00cc,#ffcc00);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+p{
+  color:#aaa;
+  margin-bottom:30px;
+}
+
+/* CARDS */
+.card-box{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+}
+
+/* CARD STYLE */
+.card{
+  width:180px;
+  padding:25px;
+  border-radius:15px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border:1px solid rgba(255,255,255,0.1);
+  cursor:pointer;
+  transition:0.4s ease;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* HOVER ANIMATION */
+.card:hover{
+  transform: translateY(-10px) scale(1.05);
+  box-shadow:0 20px 50px rgba(255,0,200,0.3);
+}
+
+/* DIFFERENT COLORS */
+.face{
+  border:1px solid #ff4dd2;
+}
+
+.body{
+  border:1px solid #00d4ff;
+}
+
+/* LINK FIX */
+a{
+  text-decoration:none;
+  color:white;
+}
+
+/* FADE IN ANIMATION */
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
